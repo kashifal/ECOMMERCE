@@ -44,9 +44,9 @@ const Cart = (props) => {
         })}
       </div>
       <div className="total">
-        <h4>Total Price: </h4>
-        <h4>$300</h4>
-        <button>Confirm order</button>
+        <h4>Hold </h4>
+        <h4>on</h4>
+        <button>working</button>
       </div>
     </>
   );
