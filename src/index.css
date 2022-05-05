@@ -1,13 +1,229 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+*
+{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins',
+  sans-serif;
+  box-sizing: border-box;
+}
+.navbar
+{
+  height: 60px;
+  width: 100%; 
+  margin-bottom: 6vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-margin
+{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-margin a 
+{
+  text-decoration: none; 
+  color: pink;
+  font-size: 20px;
+} 
+.cart
+{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px; 
+  background-color: pink;
+}
+.cart a 
+{
+
+  color: rgb(248, 79, 107);
+}
+.count
+{
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.count span 
+{
+  font-size: 10px;
+  color: rgb(73, 73, 73);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  height: 70vh; 
+  width: 80%;
+  margin: auto;
+  min-height: 70vh; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card 
+{
+  height: 300px;
+  width: 240px;
+  overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 6px; 
+  position: relative;
+}
+.price
+{
+  width: 40px;
+  height: 40px;
+  background-color: pink;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-bottom-left-radius: 25px;
+}
+.card .img 
+{
+  height: 50%;
+  width: 100%;
+  background-color: green;
+
+}
+.card .img img 
+{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit:fill;
+}
+.info 
+{
+  padding: 10px;
+
+}
+.info h4 
+{
+  font-size: 18px;
+  color: rgb(248, 79, 107);
+}
+.info p 
+{
+  font-size: 14px;
+  font-weight: 100;
+}
+.info button{
+  width: 100%;
+  height: 34px;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+.cart-main
+{
+  height: 70vh;
+  width: 80%;
+  margin: auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column; 
+}
+.single-product
+{
+  height: 70px;
+  width: 100%;
+  border-radius: 3px; 
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.product-img
+{
+  height: 100%;
+  width: 100px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.product-img img 
+{
+  width: 100%;
+}
+.btns button{
+  height:24px;
+  width: 24px;
+  border-radius: 12px;
+  border: 1px solid pink;
+  text-align: center;
+  margin-left: 6px;
+  color: pink;
+}
+.btns button:nth-child(2){
+  border: transparent;
+  background-color: transparent;
+}
+.delete
+{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  bottom: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  right: 50%;
+  background-color: pink;
+}
+.total
+{
+  height: 60px; 
+  margin-bottom: 0%;
+  width: 80%;
+  background-color: pink;
+  margin: auto;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 3px;align-items: center;
+
+}
+.total button
+{
+  padding: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+  border: transparent;
+  background-color: black;
+  color: white;
 }
